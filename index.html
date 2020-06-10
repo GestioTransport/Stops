@@ -80,7 +80,7 @@ position:relative;
         var map = L.map('map').setView([41.392264, 2.162247], 13);
         var osm =
             L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-                maxZoom: 18,
+                maxZoom: 23,
                 attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a>',
                 id: 'mapbox/streets-v11',
                 tileSize: 512,
@@ -88,19 +88,19 @@ position:relative;
             }).addTo(map);
 
         var mapboxbasic = L.tileLayer('https://api.mapbox.com/styles/v1/gestiotransport/ck93x81db3a9g1ip9pr3c7rr2/tiles/256/{z}/{x}/{y}?access_token=pk.eyJ1IjoiZ2VzdGlvdHJhbnNwb3J0IiwiYSI6ImNrOGluZGFscDAxaGQzaG10am44YW91bHIifQ.7Y_RPPdMNmQSjqm55YenAQ', {
-            maxZoom: 18,
+            maxZoom: 23,
             zIndex: 1
         });
 
         var Esri_WorldImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-            maxZoom: 18,
+            maxZoom: 23,
             zIndex: 3
         });
 
         var CartoDB_PositronOnlyLabels = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>',
             subdomains: 'abcd',
-            maxZoom: 18
+            maxZoom: 23
         });
 
         var basemap = {
